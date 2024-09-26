@@ -150,3 +150,8 @@ html, body {
     background-color: var(--dark-green); 
     color: #ffffff; 
 }
+
+.contact-links a{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
