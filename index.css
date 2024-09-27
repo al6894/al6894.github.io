@@ -102,6 +102,21 @@ html, body {
     border-radius: 50px;
 }
 
+.scrolling-text {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hidden {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+}
+
 .card-container2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
