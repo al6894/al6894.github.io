@@ -102,19 +102,26 @@ html, body {
     border-radius: 50px;
 }
 
-.scrolling-text {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    font-size: 24px;
-    font-weight: bold;
+.scroll-container {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: var(--black);
 }
 
-.hidden {
-    transform: translateX(-50%) translateY(-100%);
-    opacity: 0;
+.scrolling-text {
+    font-size: 4rem;
+    font-weight: bold;
+    position: absolute; 
+    right: -100%; 
+    transition: right 0.5s ease-in-out; 
+    color: white;
+    white-space: nowrap;
+    margin: 0;
+}
+.text-wrapper {
+    position: relative;
+    height: 100px;
 }
 
 .card-container2 {
