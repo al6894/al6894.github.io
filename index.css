@@ -24,7 +24,7 @@ html, body {
 }
 
 .about, .about2 {
-    font-size: 50px;
+    font-size: 4rem;
     font-family: var(--primary-font);
     margin-bottom: 0;
 }
@@ -40,12 +40,15 @@ html, body {
 }
 
 .pbutton {
-    background-color: #333;
-    padding: 8px 10px;
+    background-color: var(--green);
+    padding: 8px;
     margin-right: 6px;
-    font-size: 12px;
-    transition: transform 0.3s ease;
-    border-radius: 14px;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    border-radius: 10px;
+    border: 2px solid var(--dark-green); /* Thin, light border */
+    color: white;
+    cursor: pointer;
 }
 .pbutton:hover {
     transform: scale(1.1); 
@@ -191,4 +194,65 @@ html, body {
 .contact-links a{
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+/* Media Queries */
+/* For tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .card-container1 {
+        grid-template-columns: 1fr; 
+        grid-row-gap: 20px;
+    }
+    .card1 {
+        width: 100%; 
+    }
+    .card-container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .scrolling-text {
+        font-size: 3rem;
+    }
+}
+
+/* For phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .card-container1 {
+        grid-template-columns: 1fr; 
+        grid-row-gap: 15px;
+    }
+    .card1 {
+        width: 100%;
+        height: auto; 
+    }
+    .scrolling-text {
+        font-size: 2.5rem;
+    }
+    .card-container2 {
+        grid-template-columns: 1fr; 
+    }
+    .contact-btn {
+        width: 100%; 
+    }
+    .contact-btn img {
+        width: 24px; 
+        height: 24px;
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .card-container1 {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+    .card1 {
+        padding: 10px;
+    }
+    .scrolling-text {
+        font-size: 2rem; 
+    }
+    .contact-btn {
+        width: 100%; 
+        padding: 8px;
+    }
 }
