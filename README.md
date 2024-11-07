@@ -8,5 +8,5 @@ Built using HTML, CSS, Javascript
 - [x] Reactive buttons
 
 ## Planned Features
-- [] Cached pages
-- [] Stylistic improvements
+- [ ] Cached pages
+- [ ] Stylistic improvements
