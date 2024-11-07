@@ -1,5 +1,5 @@
 # Porfolio Website
-Built using HTML, CSS, Javascript
+A website built using HTML, CSS, Javascript and hosted using GitHub pages. The website showcases my projects, skills, passions, and familiar technologies!
 
 ## Features
 - [x] Scrolling text
@@ -10,3 +10,4 @@ Built using HTML, CSS, Javascript
 ## Planned Features
 - [ ] Cached pages
 - [ ] Stylistic improvements
+- [ ] Custom domain
